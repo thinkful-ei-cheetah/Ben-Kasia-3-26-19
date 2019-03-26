@@ -87,6 +87,7 @@ rocksWarning('Main St and Pacific Ave');
 rocksWarning('Centinela Ave and Olympic Blvd');
 console.log(rocksWarning);
 
+
 function turtle(arr) {
   return arr.filter(array => array[0] >= 0 && array[1] >= 0);
 }
@@ -98,12 +99,7 @@ function movementS(arr) {
   stLeft.forEach(num => console.log(num));
 }
 movementS(newArr);
-
-
-
-
 console.log(newArr);
-
 
 function decoder(str) {
   let codedArr = str.split(' ');
@@ -124,3 +120,6 @@ function decoder(str) {
 }
 
 decoder('noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest');
+
+
+
