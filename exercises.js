@@ -33,4 +33,38 @@ function avarage(arr){
   });
   return count/arr.length;
 }
-console.log(avarage([3,4,1,5,4]));
+
+
+function repeat(fn, n) {
+  for (let i = 0; i < n; i++) {
+    fn();
+  }
+}
+
+function hello() {
+  console.log('Hello world');
+}
+
+function goodbye() {
+  console.log('Goodbye world');
+}
+
+function filter(arr) {
+ 
+  return arr.filter(name => name[0] === 'R');
+   
+}
+
+// DO NOT EDIT BETWEEN THESE LINES, BUT DO READ THE CODE ----->
+// First we setup an array of strings we plan to filter:
+const myNames = ['Rich', 'Joe', 'Bhaumik', 'Ray'];
+
+// We use your `filter` function here, capturing a new array into `filteredNames`
+// comprised of names that only begin with 'R'
+const filteredNames = filter(myNames);
+//   // This is known as a "predicate function" - it's a function that 
+//   // only returns a boolean
+
+console.log(filteredNames) // => ['Rich', 'Ray']
+// <---- DO NOT EDIT BETWEEN THESE LINES
+
