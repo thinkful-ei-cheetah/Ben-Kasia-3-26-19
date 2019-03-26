@@ -26,4 +26,11 @@ function min(arr) {
   return newNum;
 }
 
-console.log(max([3,4,5,1,412,5]));
+function avarage(arr){
+  let count = 0;
+  arr.forEach(function(num){
+    return count += num;
+  });
+  return count/arr.length;
+}
+console.log(avarage([3,4,1,5,4]));
